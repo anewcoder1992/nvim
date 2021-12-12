@@ -25,6 +25,9 @@ return require('packer').startup(function(use)
     run = ':TSUpdate'
   }
 
+  --coc
+  use {'neoclide/coc.nvim', branch = 'release'}
+
   use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }

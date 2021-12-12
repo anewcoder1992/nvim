@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/Users/man/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/man/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
