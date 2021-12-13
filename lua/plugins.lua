@@ -40,6 +40,8 @@ return require('packer').startup(function(use)
     "vim-airline/vim-airline",
     "vim-airline/vim-airline-themes"
   }
+--terminal
+  use {"akinsho/toggleterm.nvim"}
 end)
 
 
