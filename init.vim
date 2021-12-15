@@ -7,7 +7,7 @@ lua require('plugins')
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " 插件配置
-lua require('plugin-config/treesitter')
+"lua require('plugin-config/treesitter')
 set guifont=DroidSansMono_Nerd_Font:h11
 map <C-n> :NERDTreeToggle<CR>
 map <leader>f :Telescope find_files<CR>
