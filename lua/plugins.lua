@@ -20,10 +20,10 @@ return require('packer').startup(function(use)
   requires = {'kyazdani42/nvim-web-devicons'}
   }
   -- treesitter
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
+  --use {
+    --'nvim-treesitter/nvim-treesitter',
+    --run = ':TSUpdate'
+  --}
 
   --coc
   use {'neoclide/coc.nvim', branch = 'release'}
