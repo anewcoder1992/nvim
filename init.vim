@@ -19,7 +19,7 @@ noremap <leader>f :Telescope find_files<CR>
 "NerdTree Switch between different windows by their direction`
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
-noremap <C-l> <C-w>r
+noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
 "coc config extensions intalled
 let g:coc_global_extensions = [
