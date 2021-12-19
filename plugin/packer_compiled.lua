@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/root/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/root/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/root/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/root/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/root/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/man/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/man/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/man/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/man/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/man/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -71,87 +71,82 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["barbar.nvim"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
   ["coc.nvim"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
-  },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
-  ["lush.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/lush.nvim",
-    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
-  nerdtree = {
+  ["nightfox.nvim"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/preservim/nerdtree"
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["nvcode-color-schemes.vim"] = {
+    loaded = true,
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim",
+    url = "https://github.com/christianchiarulli/nvcode-color-schemes.vim"
+  },
+  ["nvim-tree.lua"] = {
+    config = { "\27LJ\2\n[\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\tview\1\0\0\1\0\1\16auto_resize\2\nsetup\14nvim-tree\frequire\0" },
+    loaded = true,
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["vim-airline"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-airline",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
   ["vim-airline-themes"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
+    path = "/Users/man/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
-  },
-  ["vim-devicons"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-devicons",
-    url = "https://github.com/ryanoasis/vim-devicons"
-  },
-  ["vim-nerdtree-syntax-highlight"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-nerdtree-syntax-highlight",
-    url = "https://github.com/tiagofumo/vim-nerdtree-syntax-highlight"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n[\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\tview\1\0\0\1\0\1\16auto_resize\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
 if should_profile then save_profiles() end
 
 end)

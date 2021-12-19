@@ -3,18 +3,24 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -------------------------- plugins -------------------------------------------
+   -- theme
   use {
-    "ellisonleao/gruvbox.nvim",
-    requires = {"rktjmp/lush.nvim"}
+    "christianchiarulli/nvcode-color-schemes.vim",
     }
+   
+  use 'EdenEast/nightfox.nvim'
+  -- file expoler
   use {
-    "ryanoasis/vim-devicons",
-    "tiagofumo/vim-nerdtree-syntax-highlight"
-  }  
-  -- nerd-tree
-  use {
-    'preservim/nerdtree',
-  }
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+    config = function() require'nvim-tree'.setup {
+      view={
+        auto_resize=true,
+      }
+    } end
+}
   use {
   'romgrk/barbar.nvim',
   requires = {'kyazdani42/nvim-web-devicons'}
