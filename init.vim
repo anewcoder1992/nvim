@@ -14,12 +14,12 @@ set guifont=DroidSansMono_Nerd_Font:h11
 noremap <A-f> :Telescope find_files<CR>
 "normal mapping
 "退出键映射
- noremap <A-q> <Esc>:q<CR>
-noremap <A-h> <Esc>:BufferPrevious<CR>
-noremap <A-l> <Esc>:BufferNext<CR>
-nnoremap<A-c> <Esc>:BufferClose<CR>
-noremap <A-s> <Esc>:w <CR>
-inoremap <A-s> <Esc>:w<CR>
+ noremap <S-q> <Esc>:q<CR>
+noremap <S-h> <Esc>:BufferPrevious<CR>
+noremap <S-l> <Esc>:BufferNext<CR>
+nnoremap<S-c> <Esc>:BufferClose<CR>
+noremap <S-s> <Esc>:w <CR>
+inoremap <S-s> <Esc>:w<CR>
  
  
 "NerdTree Switch between different windows by their direction`
