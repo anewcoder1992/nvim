@@ -47,7 +47,9 @@ return require('packer').startup(function(use)
     "vim-airline/vim-airline-themes"
   }
 --terminal
-  use {"akinsho/toggleterm.nvim"}
+  use 'voldikss/vim-floaterm'
+  -- styled-components
+  use 'styled-components/vim-styled-components'
 end)
 
 
