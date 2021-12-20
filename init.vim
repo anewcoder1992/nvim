@@ -28,6 +28,8 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
 noremap <C-e> :NvimTreeToggle<CR>
+
+vnoremap <C-y> "+y
 "coc config extensions intalled
 let g:coc_global_extensions = [
       \'coc-markdownlint',
