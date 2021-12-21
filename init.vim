@@ -3,7 +3,7 @@
 lua require('basic')
 " Packer插件管理
 lua require('plugins')
-
+set noswapfile
 " coc 安装命令
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -52,8 +52,10 @@ nmap <silent>rn <Plug>(coc-rename)
 
 " 皮肤设置
 syntax on
-" colorscheme nvcode " Or whatever colorscheme you make
-colorscheme duskfox
+"colorscheme nvcode
+" " Or whatever colorscheme you make
+"colorscheme duskfox
+colorscheme onedark
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
     set termguicolors

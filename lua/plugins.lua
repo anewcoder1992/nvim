@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
     }
    
   use 'EdenEast/nightfox.nvim'
+  use 'ful1e5/onedark.nvim'
   -- file expoler
   use {
     'kyazdani42/nvim-tree.lua',
