@@ -11,15 +11,15 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 lua require 'nvim-treesitter.install'.compilers = { "gcc","gcc-8" }
 lua require('plugin-config/treesitter')
 set guifont=DroidSansMono_Nerd_Font:h11
-noremap <A-f> :Telescope find_files<CR>
+noremap ]f :Telescope find_files<CR>
+noremap ]g :Telescope live_grep<CR>
 "normal mapping
 "退出键映射
- noremap <S-q> <Esc>:q<CR>
-noremap <S-h> <Esc>:BufferPrevious<CR>
-noremap <S-l> <Esc>:BufferNext<CR>
-nnoremap<S-c> <Esc>:BufferClose<CR>
-noremap <S-s> <Esc>:w <CR>
-inoremap <S-s> <Esc>:w<CR>
+ noremap Q <Esc>:q<CR>
+noremap < <Esc>:BufferPrevious<CR>
+noremap > <Esc>:BufferNext<CR>
+nnoremap C <Esc>:BufferClose<CR>
+noremap S <Esc>:w <CR>
  
  
 "NerdTree Switch between different windows by their direction`
@@ -27,7 +27,7 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
-noremap <C-e> :NvimTreeToggle<CR>
+noremap E :NvimTreeToggle<CR>
 "系统复制粘贴
 vnoremap <C-y> "+y
 nnoremap <C-p> "*P
@@ -52,15 +52,10 @@ nmap <silent>rn <Plug>(coc-rename)
 
 " 皮肤设置
 syntax on
-"colorscheme nvcode
+colorscheme kanagawa 
 " " Or whatever colorscheme you make
 "colorscheme duskfox
-colorscheme onedark
-" checks if your terminal has 24-bit color support
-if (has("termguicolors"))
-    set termguicolors
-    hi LineNr ctermbg=NONE guibg=NONE
-endif
+"colorscheme onedark
 
 " 终端快捷键
 nnoremap   <silent>   <F7>    :FloatermNew<CR>
@@ -71,3 +66,6 @@ nnoremap   <silent>   <F9>    :FloatermNext<CR>
 tnoremap   <silent>   <F9>    <C-\><C-n>:FloatermNext<CR>
 nnoremap   <silent>   <F12>   :FloatermToggle<CR>
 tnoremap   <silent>   <F12>   <C-\><C-n>:FloatermToggle<CR>
+" highlight
+set hlsearch
+nnoremap <Space> :nohlsearch<CR><CR>

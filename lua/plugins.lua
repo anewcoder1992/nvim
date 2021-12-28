@@ -5,11 +5,10 @@ return require('packer').startup(function(use)
   -------------------------- plugins -------------------------------------------
    -- theme
   use {
-    "christianchiarulli/nvcode-color-schemes.vim",
+     'rebelot/kanagawa.nvim',
+    'EdenEast/nightfox.nvim',
+     'ful1e5/onedark.nvim'
     }
-   
-  use 'EdenEast/nightfox.nvim'
-  use 'ful1e5/onedark.nvim'
   -- file expoler
   use {
     'kyazdani42/nvim-tree.lua',
@@ -39,6 +38,7 @@ return require('packer').startup(function(use)
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
+use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 -- markdown preview
   use{
     'iamcco/markdown-preview.nvim'
@@ -51,6 +51,16 @@ return require('packer').startup(function(use)
   use 'voldikss/vim-floaterm'
   -- styled-components
   use 'styled-components/vim-styled-components'
+
+      -- mulit cursor
+    use {'mg979/vim-visual-multi', event = "InsertEnter", branch = 'master'}
+
+  -- indentline
+  use{
+        'lukas-reineke/indent-blankline.nvim',
+        config = function() require("plugin-config.indent") end,
+        event = 'BufRead'
+    }
 end)
 
 
