@@ -28,8 +28,11 @@ return require('packer').startup(function(use)
   -- treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
+    run = ':TSUpdate',
+     config = function() require('plugin-config.treesitter')
+     end 
+   }
+
 
   --coc
   use {'neoclide/coc.nvim', branch = 'release'}
@@ -61,6 +64,14 @@ use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
         config = function() require("plugin-config.indent") end,
         event = 'BufRead'
     }
+    -- git information
+    use {
+        'lewis6991/gitsigns.nvim',
+        requires = {'nvim-lua/plenary.nvim'},
+        event = "BufRead",
+        config = function() require("plugin-config.gitsign") end
+    }
+    use 'lfv89/vim-interestingwords'
 end)
 
 

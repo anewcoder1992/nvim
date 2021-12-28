@@ -9,7 +9,6 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " 插件配置
 lua require 'nvim-treesitter.install'.compilers = { "gcc","gcc-8" }
-lua require('plugin-config/treesitter')
 set guifont=DroidSansMono_Nerd_Font:h11
 noremap ]f :Telescope find_files<CR>
 noremap ]g :Telescope live_grep<CR>
@@ -44,6 +43,7 @@ let g:coc_global_extensions = [
       \'coc-git',
       \'coc-tsserver',
       \'coc-floaterm',
+      \'coc-highlight',
       \]
 " GoTo code navigation.
 nmap <silent>gd <Plug>(coc-definition)
@@ -69,3 +69,12 @@ tnoremap   <silent>   <F12>   <C-\><C-n>:FloatermToggle<CR>
 " highlight
 set hlsearch
 nnoremap <Space> :nohlsearch<CR><CR>
+
+hi CocCursorRange guibg=#b16286 guifg=#ebdbb2
+nmap <expr> <silent> <C-d> <SID>select_current_word()
+function! s:select_current_word()
+  if !get(b:, 'coc_cursors_activated', 0)
+    return "\<Plug>(coc-cursors-word)"
+  endif
+  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
+endfunc
