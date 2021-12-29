@@ -10,13 +10,13 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " 插件配置
 lua require 'nvim-treesitter.install'.compilers = { "gcc","gcc-8" }
 set guifont=DroidSansMono_Nerd_Font:h11
-noremap ]f :Telescope find_files<CR>
-noremap ]g :Telescope live_grep<CR>
+noremap ff :Telescope find_files<CR>
+noremap fg :Telescope live_grep<CR>
 "normal mapping
 "退出键映射
  noremap Q <Esc>:q<CR>
-noremap < <Esc>:BufferPrevious<CR>
-noremap > <Esc>:BufferNext<CR>
+noremap H <Esc>:BufferPrevious<CR>
+noremap L <Esc>:BufferNext<CR>
 nnoremap C <Esc>:BufferClose<CR>
 noremap S <Esc>:w <CR>
  
