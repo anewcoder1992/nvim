@@ -19,6 +19,8 @@ noremap H <Esc>:BufferPrevious<CR>
 noremap L <Esc>:BufferNext<CR>
 nnoremap C <Esc>:BufferClose<CR>
 noremap S <Esc>:w <CR>
+noremap J <C-e>
+noremap K <C-y>
  
  
 "NerdTree Switch between different windows by their direction`
