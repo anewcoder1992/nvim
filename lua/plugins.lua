@@ -72,6 +72,7 @@ use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
         config = function() require("plugin-config.gitsign") end
     }
     use 'lfv89/vim-interestingwords'
+    use 'rust-lang/rust.vim'
 end)
 
 
